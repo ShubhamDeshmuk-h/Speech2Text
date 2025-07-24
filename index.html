@@ -5,29 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--above link is taken from website called as cdnjs which includes different fonts and icons we need for the developent of the project-->
     <title>Speech to Text</title>
-
+    <link rel="icon" href="q.png" type="image/png">
 </head>
 <body>
-    <h4>SD</h4>
-    <div class="container">
-        <h2>Speech to Text Converter</h2>
-        <div id="result"></div>
-        <div class="button-container">
-            <button onclick="startConverting()">
-                <i class="fa fa-microphone"></i>
-            </button>
-            <button onclick="stopConverting()">
-                <i class="fa fa-stop"></i>
-            </button>
-            
-
-            </button>
+    <header>
+        <div class="logo" aria-label="Speech to Text Logo">Speech2Text</div>
+    </header>
+    <main>
+        <div class="container" role="main" aria-label="Speech to Text Converter">
+            <h2>Speech to Text Converter</h2>
+            <div id="result" class="placeholder" aria-live="polite" aria-atomic="true">Click the microphone and start speaking...</div>
+            <div class="button-container">
+                <button id="startBtn" onclick="startConverting()" aria-label="Start speech recognition">
+                    <i class="fa fa-microphone"></i>
+                </button>
+                <button id="stopBtn" onclick="stopConverting()" aria-label="Stop speech recognition">
+                    <i class="fa fa-stop"></i>
+                </button>
+            </div>
         </div>
-    
-    </div>
-
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
