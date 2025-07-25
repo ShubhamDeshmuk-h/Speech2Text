@@ -1,6 +1,8 @@
 # Speech2Text
 This is a website which include two option one is listen and one is stop uses listen to read Speech and then generate or transcribe speech in to text
 
+Added some new features and reposive and UI for the text to speech conversion
+
 q.png is interface image
 
 check for the microphone permission and then just run html file in your desktop with Css and javascript file after allowing permission to microphone just
